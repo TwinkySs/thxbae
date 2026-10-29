@@ -1,0 +1,1 @@
+{"name":"checkys","version":"1.0.0","description":"Checkys: мониторинг состояния сотрудников (backend + web-клиент)","scripts":{"start":"node server.js"},"engines":{"node":">=18"},"license":"UNLICENSED"}

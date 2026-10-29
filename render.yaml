@@ -1,0 +1,16 @@
+# Render Blueprint: New -> Blueprint -> выберите репозиторий -> Apply
+services:
+  - type: web
+    name: checkys
+    runtime: node
+    plan: free
+    buildCommand: echo "no build needed"
+    startCommand: node server.js
+    healthCheckPath: /api/v1/demo
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # DEMO=1: кнопки быстрого входа и сброс данных на экране входа.
+      # Для реальных сотрудников УДАЛИТЕ эту переменную (или поставьте 0).
+      - key: DEMO
+        value: "1"
